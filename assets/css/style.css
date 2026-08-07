@@ -1,0 +1,150 @@
+root {
+  --color-principal: #333;
+  --color-principal-oscuro: #352453;
+  --color-secundario: #feb33d;
+  --color-texto: #202120;
+  --color-texto-suave: #565656;
+  --color-superficio: #d8d2e2;
+  --fuente-principal: Arial, Helvetica, sans-serif;
+  --color-fondo: #f4f6f8;
+  --degradado: linear-gradient(135deg, #3e597e, #040912, #3b82f6);
+
+  
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: var(--degradado);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #d1d5db;
+    font-size: 1rem;
+}
+
+/* NAV */
+nav {
+    background-color: #111827;
+    padding: 14px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #3b82f6;
+}
+
+/* MAIN */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+/* SECTION */
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #1f2937;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3b82f6;
+    padding-bottom: 8px;
+}
+
+/* ARTICLE */
+article {
+    background-color: #f9fafb;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #3b82f6;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+	width: 80%;
+}
+
+article:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+article h3 {
+    color: var(--color-fondo);
+    margin-bottom: 10px;
+}
+
+article p {
+    color: #4b5563;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111827;
+    color: #d1d5db;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Diseño adaptable */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
