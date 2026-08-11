@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html Lang ="es">
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width" initial-scale="0.1">
+	  <title>Contacto</title>
+	  <link rel="stylesheet" href="assets/css/style.css">
+    </head>
 
+    <body>
+        <header class="encabezado-sitio">
+            <h1>Portal de Servicios Ciudadanos</h1>
+                <p class="subtitulo">Accede fácilmente a los servicios locales</p>
+        </header>
+           
+       <nav class="navegacion-sitio" aria-label="principal">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="requisitos.html">Requisitos</a>
+            <a href="ubicacion.html">Ubicación de oficinas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+      <main class="principal">
+        <h2>Contacto</h2>
+        <section >
+            <form class="formulario" action="index.html" method="get">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo">
+
+                <label for="servicio">Servicio sobre el que desea obtener informes</label>
+                <select name="curso" id="curso">
+                    <option>Licencias</option>
+                    <option>Agua</option>
+                    <option>Luz</option>
+                    <option>Gas</option>
+                </select>
+
+                <label for="mensaje">¿Cuál es tu duda?</label>
+                <textarea name="mensaje" id="mensaje" rows="5"></textarea>
+
+                <button type="Submit">Enviar Formulario</button>
+            </form>
+
+        </section>
+    </main>
+    </body>
+</html>
