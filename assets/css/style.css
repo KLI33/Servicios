@@ -1,4 +1,6 @@
-root {
+/* Estilos generales */
+
+:root {
   --color-principal: #333;
   --color-principal-oscuro: #352453;
   --color-secundario: #feb33d;
@@ -9,9 +11,11 @@ root {
   --color-fondo: #f4f6f8;
   --degradado: linear-gradient(135deg, #3e597e, #040912, #3b82f6);
 
-  
+  --espacio-1: 0.5rem;
+  --espacio-2: 1rem;
+  --espacio-3: 2rem;
+ 
 }
-
 
 
 * {
@@ -36,13 +40,13 @@ header {
 }
 
 header h1 {
-    font-size: 2.3rem;
-    margin-bottom: 8px;
+    font-size: var(--espacio-3);
+    margin-bottom: var(--espacio-1);
 }
 
 header p {
     color: #d1d5db;
-    font-size: 1rem;
+    font-size: var(--espacio-2);
 }
 
 /* NAV */
@@ -91,8 +95,43 @@ section h2 {
     padding-bottom: 8px;
 }
 
+.grid-servicios {
+    justify-items: center;
+}
+
+.tarjeta-servicio {
+    justify-items: center;
+    align-items: center;
+}
+
+article button {
+    color: #352453;
+    align-items: center;
+}
+
+input {
+    font-size: large;
+    width: 300px; 
+    height: 40px; 
+    padding: 5px 10px; 
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 300px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    color: #040912;
+}
+
+
 /* ARTICLE */
 article {
+    text-align: center;
     background-color: #f9fafb;
     padding: 20px;
     margin: 15px 0;
@@ -100,6 +139,14 @@ article {
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
 	width: 80%;
+}
+
+article img {
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* Necesita un ancho definido */
 }
 
 article:hover {
@@ -146,5 +193,15 @@ footer p {
 
     section {
         padding: 18px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0f172a;
+        color: #f1f5f9;
+    }
+        .navegacion-sitio {
+        background-color: #1e293b;
     }
 }
